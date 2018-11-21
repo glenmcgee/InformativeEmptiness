@@ -11,7 +11,7 @@ require(dplyr)
 ######################
 ## Load and clean data
 
-dat_withvalid <- read.csv("./Data Analysis/GlenData.csv") ### not publicly available
+dat_withvalid <- read.csv("../Data Analysis/GlenData.csv") ### not publicly available
 
 ## exclude validation for now
 dat <- dat_withvalid[,!(colnames(dat_withvalid) %in% c("mdes","validated") )]

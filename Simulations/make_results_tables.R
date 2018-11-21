@@ -21,7 +21,7 @@ sigma1 <- 1.5 ## SD of rand eff for X=1
 
 
 ## set path
-path <- "./Simulations/Results/" ## path for results
+path <- "../Simulations/Results/" ## path for results
 
 
 ## colors

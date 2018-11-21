@@ -10,8 +10,8 @@ dig <- 2
 
 ## load data
 ## Local:
-ests <- data.frame(read.table(file="./Data Analysis/ests.txt",header=T,row.names=1))
-SEs <- data.frame(read.table(file="./Data Analysis/SEs.txt",header=T,row.names=1))
+ests <- data.frame(read.table(file="../Data Analysis/ests.txt",header=T,row.names=1))
+SEs <- data.frame(read.table(file="../Data Analysis/SEs.txt",header=T,row.names=1))
 
 
 ## create intervals
@@ -55,15 +55,15 @@ tab_res[is.na(tab_res)] <- ""
 
 ## marginal intercepts results
 xtable(tab_res[,c(1:10,15:16)])
-write.csv(tab_res[,c(1:10,15:16)],"./Data Analysis/marg_int_results.csv")
+write.csv(tab_res[,c(1:10,15:16)],"../Data Analysis/marg_int_results.csv")
 ## marginal slopes results
 xtable(tab_res[,c(1:6,11:14,17:18)])
-write.csv(tab_res[,c(1:6,11:14,17:18)],"./Data Analysis/marg_slopes_results.csv")
+write.csv(tab_res[,c(1:6,11:14,17:18)],"../Data Analysis/marg_slopes_results.csv")
 
 ## conditional intercepts results
 xtable(tab_res[,18+c(1:2,5:8,13:14)])
-write.csv(tab_res[,18+c(1:2,5:8,13:14)],"./Data Analysis/cond_int_results.csv")
+write.csv(tab_res[,18+c(1:2,5:8,13:14)],"../Data Analysis/cond_int_results.csv")
 ## conditional slopes results
 xtable(tab_res[,18+c(3:4,9:12,15:16)])
-write.csv(tab_res[,18+c(3:4,9:12,15:16)],"./Data Analysis/cond_slopes_results.csv")
+write.csv(tab_res[,18+c(3:4,9:12,15:16)],"../Data Analysis/cond_slopes_results.csv")
 

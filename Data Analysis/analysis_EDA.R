@@ -13,7 +13,7 @@ require(tidyr)
 require(dplyr)
 require(xtable)
 ## load clean data
-source("./Data Analysis/analysis_clean_data.R")
+source("../Data Analysis/analysis_clean_data.R")
  
 
 ######################
@@ -42,7 +42,7 @@ tabNk <- cbind(tabNk_1,tabNk_2[,3])
 tabNk[is.na(tabNk)] <- "--"
 colnames(tabNk) <- c("N_k","No. G1s","% ADHD","% DES")
 xtable(tabNk,include.rownames = FALSE)
-write.table(tabNk,"./Data Analysis/tab1.csv")
+write.table(tabNk,"../Data Analysis/tab1.csv")
 
 ################################################
 ## 2 Table of overall, mothers, and non-mothers

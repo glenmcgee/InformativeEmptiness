@@ -25,11 +25,11 @@ outputsize <- 85 ## width of output (ie number of variables reported) DO NOT CHA
 ###############################################
 ## set folder to save data and load functions
 if(runLOCAL==TRUE){
-  path <- "./Simulations/Results/" ## path for results
-  funpath <- "./Functions/" ## path for functions
+  path <- "../Simulations/Results/" ## path for results
+  funpath <- "../Functions/" ## path for functions
 } else{
-  path <- "./Simulations/Results/" ## path for results
-  funpath <- "./Functions/" ## path for functions
+  path <- "../Simulations/Results/" ## path for results
+  funpath <- "../Functions/" ## path for functions
 }
 
 

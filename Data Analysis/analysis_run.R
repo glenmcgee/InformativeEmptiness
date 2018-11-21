@@ -17,11 +17,11 @@
   ## marginal size model (for comparing joint models)
 
 ## load packages
-source("./Functions/JMMICS.R")
+source("../Functions/JMMICS.R")
 ## load and clean data
-source("./Data Analysis/analysis_clean_data.R")
+source("../Data Analysis/analysis_clean_data.R")
 ## prelim tables
-source("./Data Analysis/analysis_EDA.R")
+source("../Data Analysis/analysis_EDA.R")
 ## other
 require(tidyr)
 require(dplyr)
@@ -219,8 +219,8 @@ colnames(ests) <- colnames(SEs) <- c("GEE","IEE","WEE",
                                      )
 
 
-write.table(ests,file="~/Data Analysis/ests.txt")
-write.table(SEs,file="~/Data Analysis/SEs.txt")
+write.table(ests,file="../Data Analysis/ests.txt")
+write.table(SEs,file="../Data Analysis/SEs.txt")
 
 
 

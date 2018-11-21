@@ -16,7 +16,7 @@ require(glmmML)
 require(geepack)
 require(MMLB)
 require(gaussquad)
-source("./Functions/JMMICS.R")
+source("../Functions/JMMICS.R")
 
 ## set functions
 expit <- function(y){  return(exp(y)/(1+exp(y)))}

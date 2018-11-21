@@ -11,7 +11,7 @@
 
 require(gaussquad)
 require(Rcpp)
-install.packages("./Functions/JMMICSpack_0.1.0.tar.gz",repos=NULL)
+install.packages("../Functions/JMMICSpack_0.1.0.tar.gz",repos=NULL)
 library(JMMICSpack)
 
 
